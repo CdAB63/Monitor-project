@@ -7,7 +7,7 @@
 - Qt 5.14.2
 - MySQL 8.0
 
-##Operating Procedure
+## Operating Procedure
 The following section describes the quick deployment process for non-development use.
 
 ## Clone the repository
