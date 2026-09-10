@@ -14,7 +14,7 @@ The following section describes the quick deployment process for non-development
 
 ```
 shell
-git clone --recursive https://github.com/Gastrointestinal-anesthesia/Monitor-project.git
+git clone --recursive https://github.com/cdab63/Monitor-project.git
 ```
 Run install.sh in the Monitor-project directory
 
