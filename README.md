@@ -43,11 +43,13 @@ For ease of debugging, the TCP/IP implementation uses Python's socket approach, 
 
 There is a large amount of invalid data in HL7 messages. The valid content filtered out is shown in the table below.
 
-Description	Heart Rate (ECG or Finger Pulse Oximetry)	DIAP	SYSP	Finger Pulse Oximetry	Bispectral Index
-HL7 Identifier	MDC_ECG_HEART_RATE or MDC_PULS_OXIM_PULS_RATE	MDC_PRESS_CUFF_DIA	MDC_PRESS_CUFF_SYS	MDC_PULS_OXIM_SAT_O2	MNDRY_EEG_BISPECTRAL_INDEX
-Data Range	Natural numbers	Natural numbers	Natural numbers	0–100	0–100
-Data Type	int16	int16	int16	int8	int8
-Notes
+| Description      | Heart Rate (ECG or Finger Pulse Oximetry)   | DIAP               | SYSP               | Finger Pulse Oximetry | Bispectral Index           |
+| ---------------- | ------------------------------------------- | ------------------ | ------------------ | --------------------- | -------------------------- |
+| HL7 Identifier   | MDC_ECG_HEART_RATE or MDC_PULS_OXIM_PULS_RATE | MDC_PRESS_CUFF_DIA | MDC_PRESS_CUFF_SYS | MDC_PULS_OXIM_SAT_O2  | MNDRY_EEG_BISPECTRAL_INDEX |
+| Data Range       | Natural numbers                             | Natural numbers    | Natural numbers    | 0–100                 | 0–100                      |
+| Data Type        | int16                                       | int16              | int16              | int8                  | int8                       |
+
+## Notes
 
 Some items in each packet may have no valid data; in this case, they are represented by -1.
 
